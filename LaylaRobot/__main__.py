@@ -100,11 +100,14 @@ buttons = [
 
 
 HELP_STRINGS = """
-`Hi.. I'M` Layla
-`ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`
-Powered by :- [Awesome Bots](t.me/Laylalist)"""
+*Hi.. I'M Koyomi Aragai*
 
-layla_IMG = "https://telegra.ph/file/524b78577a42b02b2f074.jpg"
+`/start` *To Check If I Am Alive..*
+`/help` *To Check What Can I Do?..*
+
+*You Can Handle Me* `/` *or* `!` *This*"""
+
+layla_IMG = "https://telegra.ph/file/efb0c55b9db8752c1de7d.mp4"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project [Hero](t.me/HEROGAMERS1) \
