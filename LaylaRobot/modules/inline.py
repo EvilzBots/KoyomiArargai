@@ -6,6 +6,7 @@ import requests
 from telethon.tl.functions.channels import GetFullChannelRequest
 from telethon.tl.types import ChannelParticipantsAdmins
 from telethon import events
+from LaylaRobot import tbot
 
 from telegram import MAX_MESSAGE_LENGTH, ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler
@@ -33,6 +34,8 @@ from LaylaRobot.modules.sql.users_sql import get_user_num_chats
 from LaylaRobot.modules.helper_funcs.chat_status import sudo_plus
 from LaylaRobot.modules.helper_funcs.extraction import extract_user
 from LaylaRobot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
+
+app = thot
 
 @app.on(events.InlineQuery(pattern=r"info"))
 def info(update: Update, context: CallbackContext):
