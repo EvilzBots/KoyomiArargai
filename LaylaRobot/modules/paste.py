@@ -28,8 +28,9 @@ def paste(update: Update, context: CallbackContext):
     )
 
     url = f"https://nekobin.com/{key}"
+    url2 = f"https://nekobin.com/{key}/raw"
 
-    reply_text = f"Nekofied to *Nekobin* : {url}"
+    reply_text = f"Nekofied to *Nekobin* : {url}\nRaw Text Here : {url2}"
 
     message.reply_text(
         reply_text, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
