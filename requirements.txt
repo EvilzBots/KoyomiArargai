@@ -1,4 +1,4 @@
-googletrans
+
 CurrencyConverter
 Pillow>=4.2.0
 PyDictionary==2.0.1
