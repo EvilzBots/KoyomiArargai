@@ -86,12 +86,7 @@ buttons = [
         InlineKeyboardButton(
             text="✘ Add Me To Group ✘", url="t.me/KayamiArargaiBot?startgroup=true"),
     ],
-    [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="layla_"),
-        InlineKeyboardButton(
-            text="ꜱᴜᴘᴘᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
-        ),
-    ],
+
     [
         InlineKeyboardButton(text="✘ Devs ✘", url=f"https://telegra.ph/Who-Developed-Me-06-11"),
         InlineKeyboardButton(
