@@ -74,11 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hy my Friend, I am Your Assistant!
+*Hy my Friend, I am Your Assistant!*
 
-I am an Anime themed advance group management bot with a lot of Features & Modules. /help
+*I am an Anime themed advance group management bot with a lot of Features & Modules.*
 
-Use Help & Commands Button To Know My Features!
+`/ping` *Check I Am Alive Or Not?*
+`/help` *Get Your Help Menu!*
+
+*Use Help & Commands Button To Know My Features!*
 """
 
 buttons = [
@@ -100,14 +103,13 @@ buttons = [
 
 
 HELP_STRINGS = """
-*Hi.. I'M Koyomi Aragai*
+*This Is Help Menu*
 
-`/start` *To Check If I Am Alive..*
-`/help` *To Check What Can I Do?..*
+*You Can Also Access Via This*`/help` 
 
 *You Can Handle Me* `/` *or* `!` *This*"""
 
-layla_IMG = "https://telegra.ph/file/efb0c55b9db8752c1de7d.mp4"
+layla_IMG = "https://telegra.ph/file/333553ffb6b122b42d84d.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
  You can support the project [Hero](t.me/HEROGAMERS1) \
