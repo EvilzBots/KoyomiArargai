@@ -19,7 +19,7 @@ from search_engine_parser import GoogleSearch
 
 from LaylaRobot.function.pluginhelpers import convert_seconds_to_minutes as time_convert
 from LaylaRobot.function.pluginhelpers import fetch
-from LaylaRobot import pyrogram as pbot
+from LaylaRobot import pbot
 
 SUDOERS = 1808767615
 ARQ_API = "http://35.240.133.234:8000"
