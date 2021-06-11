@@ -93,7 +93,7 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="✘ Devs ✘", callback_data="mdevs"),
+        InlineKeyboardButton(text="✘ Devs ✘", url=f"https://telegra.ph/Who-Developed-Me-06-11"),
         InlineKeyboardButton(
             text="✘ Updates Channel ✘", url=f"https://t.me/TeamKoyomi"
         ),
