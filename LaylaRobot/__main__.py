@@ -78,8 +78,8 @@ PM_START_TEXT = """
 
 *I am an Anime themed advance group management bot with a lot of Features & Modules.*
 
-`/ping` *Check I Am Alive Or Not?*
-`/help` *Get Your Help Menu!*
+`/ping` : *Check I Am Alive Or Not?*
+`/help` : *Get Your Help Menu!*
 
 *Use Help & Commands Button To Know My Features!*
 """
@@ -90,12 +90,7 @@ buttons = [
             text="✘ Add Me To Group ✘", url="t.me/KayamiArargaiBot?startgroup=true"),
     ],
 
-    [
-        InlineKeyboardButton(text="✘ Devs ✘", url=f"https://telegra.ph/Who-Developed-Me-06-11"),
-        InlineKeyboardButton(
-            text="✘ Updates Channel ✘", url=f"https://t.me/TeamKoyomi"
-        ),
-    ],
+    
     [
         InlineKeyboardButton(text="✘ Help & Commands ✘", callback_data="help_back"),
     ],
@@ -105,16 +100,15 @@ buttons = [
 HELP_STRINGS = """
 *This Is Help Menu*
 
-*You Can Also Access Via This*`/help` 
+*You Can Also Access Via This* : `/help` 
 
 *You Can Handle Me* `/` *or* `!` *This*"""
 
 layla_IMG = "https://telegra.ph/file/333553ffb6b122b42d84d.jpg"
 
-DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project [Hero](t.me/HEROGAMERS1) \
- Supporting isnt always financial! [AwesomeSupport](t.me/LaylaList) \
- Those who cannot provide monetary support are welcome to help us develop the bot at ."""
+DONATE_STRING = """*I'm Glad To Know You Are Interested To Donate
+Us By The Way , We Can't Take Funds From Anywhere.
+You Can Just Say `We Love Koyomi ❤️` in @KoyomiSupport*."""
 
 IMPORTED = {}
 MIGRATEABLE = []
