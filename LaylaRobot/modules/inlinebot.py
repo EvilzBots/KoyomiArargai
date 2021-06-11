@@ -23,13 +23,9 @@ from search_engine_parser import GoogleSearch
 from tswift import Song
 from youtubesearchpython import VideosSearch
 
-from LaylaRobot.cutiepii.config import get_str_key
 from LaylaRobot.function.inlinehelper import *
 from LaylaRobot.function.pluginhelpers import fetch, json_prettify
 from LaylaRobot import pgram as app
-
-OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
-TIME_API_KEY = get_str_key("TIME_API_KEY", required=False)
 
 class AioHttp:
     @staticmethod
@@ -685,57 +681,6 @@ async def inline_query_handler(client, query):
             )
             await client.answer_inline_query(query.id, cache_time=0, results=results)
 
-        elif text.split()[0] == "weather":
-            results = []
-            sample_url = "https://api.openweathermap.org/data/2.5/weather?q={}&APPID={}&units=metric"
-            input_str = text.split(None, 1)[1]
-            async with aiohttp.ClientSession() as session:
-                response_api_zero = await session.get(
-                    sample_url.format(input_str, OPENWEATHERMAP_ID)
-                )
-            response_api = await response_api_zero.json()
-            if response_api["cod"] == 200:
-                country_code = response_api["sys"]["country"]
-                country_time_zone = int(response_api["timezone"])
-                sun_rise_time = int(response_api["sys"]["sunrise"]) + country_time_zone
-                sun_set_time = int(response_api["sys"]["sunset"]) + country_time_zone
-                lol = """ 
-        WEATHER INFO GATHERED
-        Location: {}
-        Temperature ☀️: {}°С
-            minimium: {}°С
-            maximum : {}°С
-        Humidity 🌤**: {}%
-        Wind 💨: {}m/s
-        Clouds ☁️: {}hpa
-        Sunrise 🌤: {} {}
-        Sunset 🌝: {} {}""".format(
-                    input_str,
-                    response_api["main"]["temp"],
-                    response_api["main"]["temp_min"],
-                    response_api["main"]["temp_max"],
-                    response_api["main"]["humidity"],
-                    response_api["wind"]["speed"],
-                    response_api["clouds"]["all"],
-                    # response_api["main"]["pressure"],
-                    time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(sun_rise_time)),
-                    country_code,
-                    time.strftime("%Y-%m-%d %H:%M:%S", time.gmtime(sun_set_time)),
-                    country_code,
-                )
-                results.append(
-                    InlineQueryResultArticle(
-                        title=f"Weather Information",
-                        description=lol,
-                        input_message_content=InputTextMessageContent(
-                            lol, disable_web_page_preview=True
-                        ),
-                    )
-                )
-                await client.answer_inline_query(
-                    query.id, cache_time=0, results=results
-                )
-
         elif text.split()[0] == "datetime":
             results = []
             gay = text.split(None, 1)[1]
@@ -895,7 +840,6 @@ async def inline_query_handler(client, query):
 def generate_time(to_find: str, findtype: List[str]) -> str:
     data = requests.get(
         f"http://api.timezonedb.com/v2.1/list-time-zone"
-        f"?key={TIME_API_KEY}"
         f"&format=json"
         f"&fields=countryCode,countryName,zoneName,gmtOffset,timestamp,dst"
     ).json()
