@@ -35,7 +35,7 @@ from LaylaRobot.modules.helper_funcs.chat_status import sudo_plus
 from LaylaRobot.modules.helper_funcs.extraction import extract_user
 from LaylaRobot import telethn as YoneTelethonClient, TIGERS, DRAGONS, DEMONS
 
-app = thot
+app = tbot
 
 @app.on(events.InlineQuery(pattern=r"info"))
 def info(update: Update, context: CallbackContext):
