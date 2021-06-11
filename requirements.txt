@@ -78,7 +78,6 @@ sqlalchemy==1.3.20
 telegraph
 telethon==1.16.4
 tswift
-ujson
 validators
 wget
 wikipedia
