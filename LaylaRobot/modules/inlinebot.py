@@ -11,7 +11,6 @@ from bs4 import BeautifulSoup
 from countryinfo import CountryInfo
 from faker import Faker
 from faker.providers import internet
-from PyDictionary import PyDictionary
 from pyrogram import errors, filters
 from pyrogram.types import (
     InlineKeyboardButton,
@@ -31,9 +30,6 @@ from LaylaRobot import pgram as app
 
 OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
 TIME_API_KEY = get_str_key("TIME_API_KEY", required=False)
-
-dictionary = PyDictionary()
-
 
 class AioHttp:
     @staticmethod
@@ -81,9 +77,6 @@ Commands Available:
 - spaminfo [ID] - Get spam info of the user.
 - lyrics [QUERY] - Get lyrics of the song.
 - paste [TEXT] - Paste text on pastebin.
-- define [WORD] - Get definition from Dictionary.
-- synonyms [WORD] - Get synonyms from Dictionary.
-- antonyms [WORD] - Get antonyms from Dictionary.
 - country [QUERY] - Get Information about given country.
 - cs - Gathers Cricket info (Globally).
 - covid [COUNTRY] - Get covid updates of given country.
@@ -123,9 +116,6 @@ __HELP__ = """
 - **spaminfo [id]** - __Get spam info of the user.__
 - **lyrics [QUERY]** - __Get lyrics of given song.__
 - **paste [TEXT]** - __Paste text on pastebin.__
-- **define [WORD]** - __Get definition from Dictionary.__
-- **synonyms [WORD]** - __Get synonyms from Dictionary.__
-- **antonyms [WORD]** - __Get antonyms from Dictionary.__
 - **country [QUERY]** - __Get Information about given country.__
 - **cs** - __Gathers Cricket info (Globally).__
 - **covid [COUNTRY]** - __Get covid updates of given country.__
@@ -690,66 +680,6 @@ async def inline_query_handler(client, query):
                     description="Click here to see them",
                     input_message_content=InputTextMessageContent(
                         res, parse_mode="HTML", disable_web_page_preview=False
-                    ),
-                )
-            )
-            await client.answer_inline_query(query.id, cache_time=0, results=results)
-
-        elif text.split()[0] == "antonyms":
-            results = []
-            lel = text.split(None, 1)[1]
-            word = f"{lel}"
-            let = dictionary.antonym(word)
-            set = str(let)
-            jet = set.replace("{", "")
-            net = jet.replace("}", "")
-            got = net.replace("'", "")
-            results.append(
-                InlineQueryResultArticle(
-                    title=f"antonyms for {lel}",
-                    description=got,
-                    input_message_content=InputTextMessageContent(
-                        got, disable_web_page_preview=False
-                    ),
-                )
-            )
-            await client.answer_inline_query(query.id, cache_time=0, results=results)
-
-        elif text.split()[0] == "synonyms":
-            results = []
-            lel = text.split(None, 1)[1]
-            word = f"{lel}"
-            let = dictionary.synonym(word)
-            set = str(let)
-            jet = set.replace("{", "")
-            net = jet.replace("}", "")
-            got = net.replace("'", "")
-            results.append(
-                InlineQueryResultArticle(
-                    title=f"antonyms for {lel}",
-                    description=got,
-                    input_message_content=InputTextMessageContent(
-                        got, disable_web_page_preview=False
-                    ),
-                )
-            )
-            await client.answer_inline_query(query.id, cache_time=0, results=results)
-
-        elif text.split()[0] == "define":
-            results = []
-            lel = text.split(None, 1)[1]
-            word = f"{lel}"
-            let = dictionary.meaning(word)
-            set = str(let)
-            jet = set.replace("{", "")
-            net = jet.replace("}", "")
-            got = net.replace("'", "")
-            results.append(
-                InlineQueryResultArticle(
-                    title=f"Definition for {lel}",
-                    description=got,
-                    input_message_content=InputTextMessageContent(
-                        got, disable_web_page_preview=False
                     ),
                 )
             )
