@@ -74,9 +74,11 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-Hello, I'M Layla
-`ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ` /help
-Maintained by @HEROGAMERS1 ❤
+Hy my Friend, I am Your Assistant!
+
+I am an Anime themed advance group management bot with a lot of Features & Modules. /help
+
+Use Help & Commands Button To Know My Features!
 """
 
 buttons = [
@@ -91,9 +93,9 @@ buttons = [
         ),
     ],
     [
-        InlineKeyboardButton(text="ʟᴏɢꜱ", url=f"https://t.me/laylalogs"),
+        InlineKeyboardButton(text="✘ Devs ✘", callback_data="mdevs"),
         InlineKeyboardButton(
-            text="ꜰᴇᴅᴇʀᴀᴛɪᴏɴ", url=f"https://t.me/AntiRippingOrganization/410"
+            text="✘ Updates Channel ✘", url=f"https://t.me/TeamKoyomi"
         ),
     ],
     [
