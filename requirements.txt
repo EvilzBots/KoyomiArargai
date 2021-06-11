@@ -1,4 +1,4 @@
-#googletrans
+googletrans
 CurrencyConverter
 Pillow>=4.2.0
 PyDictionary==2.0.1
@@ -86,3 +86,4 @@ youtube_dl>=2021.4.26
 youtube_search
 youtube_search_python
 zalgo_text
+wget
