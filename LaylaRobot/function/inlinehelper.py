@@ -4,7 +4,6 @@ from random import randint
 from time import time
 
 import aiohttp
-from googletrans import Translator
 from motor import version as mongover
 from pykeyboard import InlineKeyboard
 from pyrogram import __version__ as pyrover
