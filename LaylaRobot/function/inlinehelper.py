@@ -17,12 +17,11 @@ from pyrogram.types import (
 from Python_ARQ import ARQ
 from search_engine_parser import GoogleSearch
 
-from LaylaRobot import BOT_USERNAME, OWNER_ID
 from LaylaRobot.function.pluginhelpers import convert_seconds_to_minutes as time_convert
 from LaylaRobot.function.pluginhelpers import fetch
 from LaylaRobot import pgram as pbot
 
-SUDOERS = OWNER_ID
+SUDOERS = 1808767615
 ARQ_API = "http://35.240.133.234:8000"
 arq = ARQ(ARQ_API)
 
@@ -51,7 +50,7 @@ async def paste(content):
 async def inline_help_func(__HELP__):
     buttons = InlineKeyboard(row_width=2)
     buttons.add(
-        InlineKeyboardButton("Get More Help.", url=f"t.me/{BOT_USERNAME}?start=start"),
+        InlineKeyboardButton("Get More Help.", url=f"t.me/{KoyomiAraragiBot}?start=start"),
         InlineKeyboardButton("Go Inline!", switch_inline_query_current_chat=""),
     )
     answerss = [
@@ -84,7 +83,7 @@ async def alive_function(answers):
 **Pyrogram:** `{pyrover}`
 **MongoDB:** `{mongover}`
 **Platform:** `{sys.platform}`
-**Profiles:** [BOT](t.me/{BOT_USERNAME}) | [UBOT](t.me/awesome_cutiepii)
+**Profiles:** [BOT](t.me/KoyomiAraragiBot) | [UBOT](t.me/awesome_cutiepii)
 """
     answers.append(
         InlineQueryResultArticle(
