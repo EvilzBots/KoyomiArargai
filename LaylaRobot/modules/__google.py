@@ -282,10 +282,8 @@ __help__ = """
  ➤ `/img` <text>*:* *Search Google for images and returns them\nFor greater no. of results specify lim, For eg:* `/img hello lim=10`
  ➤ `/app` <appname>*:* *Searches for an app in Play Store and returns its details.*
  ➤ `/reverse`: *Does a reverse image search of the media which it was replied to.*
- ✖ `/gps` <location>*:* *Get gps location.*
- ✖ `/github` <username>*:* *Get information about a GitHub user.*
- ✖ `/country` <country name>*:* *Gathering info about given country*
- ❍ /imdb <Movie name>*:* Get full info about a movie with imdb.com
- ❍ Yone <query>*:* Yone answers the query
-  💡Ex: `Yone where is India?`
+ ➤ `/gps` <location>*:* *Get gps location.*
+ ➤ `/github` <username>*:* *Get information about a GitHub user.*
+ ➤ `/country` <country name>*:* *Gathering info about given country*
+ ➤ `/imdb` <Movie name>*:* *Get full info about a movie with imdb.com*
 """
