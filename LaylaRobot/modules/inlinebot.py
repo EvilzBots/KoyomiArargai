@@ -1,6 +1,6 @@
 import re
 import random
-from LaylaRobot import tbot as Evil
+from LaylaRobot import tbot
 from telethon import Button
 from telethon import events
 from telethon.tl.functions.users import GetFullUserRequest
