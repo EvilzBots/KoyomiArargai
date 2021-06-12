@@ -95,6 +95,10 @@ buttons = [
         InlineKeyboardButton(text="✘ Help & Commands ✘", callback_data="help_back"),
     ],
 ]
+[
+        InlineKeyboardButton(text="✘ Inline Commmands ✘", callback_data="anime_inline"),
+    ],
+]
 
 
 HELP_STRINGS = """
