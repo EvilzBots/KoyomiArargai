@@ -32,12 +32,12 @@ IN_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="✘ Anime ✘", callback_data="anime_inline"),
+            text="✘ Anime ✘", callback_data="inlinebot"),
     ],
 
     
     [
-        InlineKeyboardButton(text="✘ Help & Commands ✘", callback_data="help_back"),
+        InlineKeyboardButton(text="✘ Back Me ✘", callback_data="help_back"),
     ],
 ]
 
