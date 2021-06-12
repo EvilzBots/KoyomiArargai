@@ -238,10 +238,10 @@ def info(update: Update, context: CallbackContext):
     else:
         return
 
-    rep = message.reply_text("<code>Appraising...</code>", parse_mode=ParseMode.HTML)
+    rep = message.reply_text("<code>Extracting Info 🔍...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b> Appraisal results:</b> 」\n"
+        f"╒═══「<b> Found Him:</b> 」\n"
         f"ID: <code>{user.id}</code>\n"
         f"First Name: {html.escape(user.first_name)}"
     )
@@ -255,7 +255,7 @@ def info(update: Update, context: CallbackContext):
     text += f"\nPermalink: {mention_html(user.id, 'link')}"
 
     if chat.type != "private" and user_id != bot.id:
-        _stext = "\nPresence: <code>{}</code>"
+        _stext = "\nWhat Are You Gonna Do With His I'd?"
 
         afk_st = is_afk(user.id)
         if afk_st:
@@ -518,30 +518,28 @@ def __user_info__(user_id):
 
 __help__ = """
 *Away from group*
- ❍ /afk <reason>*:* mark yourself as AFK(away from keyboard).
- ❍ brb <reason>*:* same as the afk command - but not a command.
-When marked as AFK, any mentions will be replied to with a message to say you're not available!
+➤ `/afk` <reason>*:* *mark yourself as AFK(away from keyboard).*
 
 *ID:*
- ❍ /id*:* get the current group id. If used by replying to a message, gets that user's id.
- ❍ /gifid*:* reply to a gif to me to tell you its file ID.
+➤ `/id` *:* *get the current group id. If used by replying to a message, gets that user's id*
+➤ `/gifid` *:* *reply to a gif to me to tell you its file ID.*
 
 *Self addded information:* 
- ❍ /setme <text>*:* will set your info
- ❍ /me*:* will get your or another user's info.
+➤ `/setme`™<text>*:* *will set your info*
+➤ `/me` *:will get your or another user's info*
 *Examples:* 💡
- ➩ /setme I am a wolf.
- ➩ /me @username(defaults to yours if no user specified)
+➤ `/setme` *I am a wolf.*
+➤ `/me` *@username(defaults to yours if no user specified)*
 
 *Information others add on you:* 
- ❍ /bio*:* will get your or another user's bio. This cannot be set by yourself.
- ❍ /setbio <text>*:* while replying, will save another user's bio 
+➤ `/bio` *:* *will get your or another user's bio. This cannot be set by yourself.*
+➤ `/setbio` <text>*:* *while replying, will save another user's bio*
 *Examples:* 💡
- ➩ /bio @username(defaults to yours if not specified).`
- ➩ /setbio This user is a wolf` (reply to the user)
+➤ `/bio` @username *:(defaults to yours if not specified).*
+➤ `/setbio ` *:This user is a wolf* `(reply to the user)`
 
-*Overall Information about you:*
- ❍ /info*:* get information about a user. 
+*Overall Information about any user:*
+➤/info*:* get information about a user. 
  
 *What is that health thingy?*
  Come and see [HP System explained](https://t.me/OnePunchUpdates/192)
@@ -567,7 +565,7 @@ dispatcher.add_handler(GET_BIO_HANDLER)
 dispatcher.add_handler(SET_ABOUT_HANDLER)
 dispatcher.add_handler(GET_ABOUT_HANDLER)
 
-__mod_name__ = "Infos"
+__mod_name__ = "✘ Infos ✘"
 __command_list__ = ["setbio", "bio", "setme", "me", "info"]
 __handlers__ = [
     ID_HANDLER,
