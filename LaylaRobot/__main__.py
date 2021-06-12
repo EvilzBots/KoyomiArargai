@@ -97,7 +97,7 @@ buttons = [
 
     [
         InlineKeyboardButton(
-            text="✘ Inline Commands ✘", callback_data="anime_inline"),
+            text="✘ Inline Commands ✘", callback_data="inlinebot"),
     ],
 ]
 
