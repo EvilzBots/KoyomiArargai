@@ -1,6 +1,6 @@
 import re
 import random
-from LaylaRobot import tbot
+from LaylaRobot import telethn as tbot
 from telethon import Button
 from telethon import events
 from telethon.tl.functions.users import GetFullUserRequest
@@ -12,6 +12,6 @@ Get information about anime, manga or characters from AniList.
 Available commands:
  ➤ `/YONE` <anime>: returns information about the anime.
 '''
-@Evil.on(events.callbackquery.CallbackQuery(data="inlinebot"))
+@tbot.on(events.callbackquery.CallbackQuery(data="inlinebot"))
 async def inlinebot(event):
     await event.edit(IN_TXT)
