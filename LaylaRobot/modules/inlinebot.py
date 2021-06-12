@@ -32,7 +32,7 @@ IN_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="✘ Anime ✘", url="t.me/KoyomiArargaiBot?start=anime),
+            text="✘ Anime ✘", callback_data="anime_inline"),
     ],
 
     
