@@ -16,4 +16,4 @@ IN_TXT = '''
 async def inlinebot(event):
     await event.edit(IN_TXT, buttons=[
         [Button.switch_inline("✘ Anime ✘", query="anime", same_peer=True)],
-        [Button.inline("Back", data="help_back")])
+        [Button.inline("Back", data="help_back")]])
