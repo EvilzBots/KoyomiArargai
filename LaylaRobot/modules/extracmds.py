@@ -11,7 +11,7 @@ N_TXT = '''
 **This Next-gen Inline Menu:**
 • This Is Anime Section! •
 '''
-@tbot.on(events.callbackquery.CallbackQuery(data="inlinebot"))
+@tbot.on(events.callbackquery.CallbackQuery(data="extracmds"))
 async def extracmds(event):
     await event.edit(N_TXT, buttons=[
            [Button.inline("Cleaner", data="cleaner")]])
