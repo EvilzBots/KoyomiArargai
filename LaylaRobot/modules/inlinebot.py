@@ -14,4 +14,6 @@ IN_TXT = '''
 '''
 @tbot.on(events.callbackquery.CallbackQuery(data="inlinebot"))
 async def inlinebot(event):
-    await event.edit(IN_TXT, buttons=[[Button.switch_inline("✘ Anime ✘", query="anime", same_peer=True)]])
+    await event.edit(IN_TXT, buttons=[
+        [Button.switch_inline("✘ Anime ✘", query="anime", same_peer=True)],
+        [Button.inline("Back", data="help_back")])
