@@ -16,7 +16,7 @@ from LaylaRobot.events import register
 
 @tbot.on(events.InlineQuery(pattern='imbd ?(.*)'))
 async def imbd(event):
-if e.fwd_from:
+    if e.fwd_from:
         return
     try:
         movie_name = e.pattern_match.group(1)
