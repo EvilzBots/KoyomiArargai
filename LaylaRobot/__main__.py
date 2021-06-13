@@ -96,6 +96,11 @@ buttons = [
     ],
 
     [
+      InlineKeyboardButton(
+            text="✘ Extra Commands ✘", callback_data="extracmds"),
+    ],
+
+    [
         InlineKeyboardButton(
             text="✘ Inline Commands ✘", callback_data="inlinebot"),
     ],
