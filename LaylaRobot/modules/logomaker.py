@@ -10,6 +10,8 @@ import time
 from telethon.tl.types import InputMessagesFilterPhotos
 
 @tbot.on(events.callbackquery.CallbackQuery(data="logo"))
+async def logo(event):
+
 FONT_FILE_TO_USE = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
 
 #Add telegraph media links of profile pics that are to be used
