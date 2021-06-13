@@ -1,8 +1,8 @@
 
 import aiohttp
 import requests
-from Mizuhararobot import pbot
-from Mizuhararobot.modules.anime import (airing_query, anime_query, character_query,
+from LaylaRobot import pbot
+from LaylaRobot.modules.anime import (airing_query, anime_query, character_query,
                                    manga_query, shorten, t, url)
 from pyrogram.types import (InlineKeyboardButton, InlineKeyboardMarkup,
                             InlineQueryResultArticle, InlineQueryResultPhoto,
