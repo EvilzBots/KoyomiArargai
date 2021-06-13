@@ -87,17 +87,12 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="✘ Add Me To Group ✘", url="t.me/KayamiArargaiBot?startgroup=true"),
+            text="✘ Add Me To Group ✘", url="t.me/KoyomiArargaiBot?startgroup=true"),
     ],
 
     
     [
         InlineKeyboardButton(text="✘ Help & Commands ✘", callback_data="help_back"),
-    ],
-
-    [
-      InlineKeyboardButton(
-            text="✘ Extra Commands ✘", callback_data="extracmds"),
     ],
 
     [
@@ -109,9 +104,10 @@ buttons = [
 
 
 HELP_STRINGS = """
-*This Is Help Menu*
 
-*You Can Also Access Via This* : `/help` 
+*This Is Help Menu Of {}*
+
+*You Can Also Access This Menu Via* : `/help` 
 
 *You Can Handle Me* `/` *or* `!` *This*"""
 
