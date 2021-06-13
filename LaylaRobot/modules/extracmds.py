@@ -7,11 +7,11 @@ from telethon import events
 from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import KeyboardButtonCallback
 
-IN_TXT = '''
+N_TXT = '''
 **This Next-gen Inline Menu:**
 • This Is Anime Section! •
 '''
 @tbot.on(events.callbackquery.CallbackQuery(data="inlinebot"))
 async def extracmds(event):
-    await event.edit(IN_TXT, buttons=[
+    await event.edit(N_TXT, buttons=[
            [Button.inline("Cleaner", data="cleaner")]])
