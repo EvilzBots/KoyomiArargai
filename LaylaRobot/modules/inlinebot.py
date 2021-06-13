@@ -8,11 +8,9 @@ from telethon.tl.functions.users import GetFullUserRequest
 from telethon.tl.types import KeyboardButtonCallback
 
 IN_TXT = '''
-Here is the help for the Anime Lovers ❤️:
-Get information about anime, manga or characters from AniList.
-Available commands:
- ➤ `/YONE` <anime>: returns information about the anime.
+**This Next-gen Inline Menu:**
 '''
 @tbot.on(events.callbackquery.CallbackQuery(data="inlinebot"))
 async def inlinebot(event):
-    await event.edit(IN_TXT)
+    await event.edit(IN_TXT, buttons=[[Button.inline("Anime", data="anime")]])
+
