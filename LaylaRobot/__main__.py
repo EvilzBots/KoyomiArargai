@@ -87,7 +87,7 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="✘ Add Me To Group ✘", url="t.me/KoyomiArargaiBot?startgroup=true"),
+            text="✘ Add Me To Group ✘", url="t.me/KoyomiAraragiBot?startgroup=true"),
     ],
 
     
