@@ -1,6 +1,7 @@
 from LaylaRobot import telethn as tbot
 from LaylaRobot.status import *
-from telethon import events, Button, types
+from telethon import Button, types
+from telethon import events as e
 from ..helpers.search import shorten, anime_query, GRAPHQL
 from datetime import timedelta
 import requests
