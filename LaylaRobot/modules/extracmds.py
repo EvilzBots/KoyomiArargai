@@ -14,4 +14,4 @@ N_TXT = '''
 @tbot.on(events.callbackquery.CallbackQuery(data="extracmds"))
 async def extracmds(event):
     await event.edit(N_TXT, buttons=[
-           [Button.inline("Logo", data="logomaker.py")]])
+           [Button.inline("Logo", data="logomaker")]])
