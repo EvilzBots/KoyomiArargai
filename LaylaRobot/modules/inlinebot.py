@@ -10,11 +10,10 @@ from telethon.tl.types import KeyboardButtonCallback
 IN_TXT = '''
 **This Next-gen Inline Menu:**
 
-• This Is Anime Section! •
+**• This Is Anime Inline Section! •**
 '''
 @tbot.on(events.callbackquery.CallbackQuery(data="inlinebot"))
 async def inlinebot(event):
     await event.edit(IN_TXT, buttons=[
         [Button.switch_inline("✘ Anime ✘", query="anime", same_peer=True), Button.switch_inline("✘ Manga ✘", query="manga", same_peer=True)],
-        [Button.switch_inline("✘ Character ✘", query="character", same_peer=True), Button.switch_inline("✘ Airing ✘", query="airing", same_peer=True)],
         [Button.inline("Next", data="search_inline")]])
