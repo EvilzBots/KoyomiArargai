@@ -44,7 +44,7 @@ __help__ = """
  You can either enter just the song name or both the artist and song name.
 """
 
-__mod_name__ = "✘ Lyrics ✘"
+__mod_name__ = "Lʏʀɪᴄs"
 
 
 
