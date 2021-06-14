@@ -28,8 +28,4 @@ UPDATES_INFO = '''
 async def inlinebot(event):
     await event.edit(IN_TXT, buttons=[
         [Button.switch_inline("✘ Anime ✘", query="anime", same_peer=True), Button.switch_inline("✘ Manga ✘", query="manga", same_peer=True)],
-        [Button.inline("Next", data="update_infom")]])
-
-@tbot.on(events.callbackquery.CallbackQuery(data="update_infom"))
-async def update_infom(event):
-   await event.edit(UPDATES_INFO, buttons=[[Button.inline("Help Commands", data="help_back")]])
+        [Button.inline("Back", data="help_back")]]
