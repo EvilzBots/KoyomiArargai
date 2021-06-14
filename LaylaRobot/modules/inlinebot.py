@@ -32,4 +32,4 @@ async def inlinebot(event):
 
 @tbot.on(events.callbackquery.CallbackQuery(data="update_infom"))
 async def update_infom(event):
-   await event.answer(UPDATES_INFO, show_alert= True)
+   await event.edit(UPDATES_INFO, buttons=[[Button.inline("Help Commands", data="help_back")])
