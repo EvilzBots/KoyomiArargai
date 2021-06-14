@@ -78,8 +78,8 @@ PM_START_TEXT = """
 
 *I am an Anime themed advance group management bot with a lot of Features & Modules.*
 
-`/ping` : *Check I Am Alive Or Not?*
-`/help` : *Get Your Help Menu!*
+`/ping` *: Check I Am Alive Or Not?*
+`/help` *: Get Your Help Menu!*
 
 *Use Help & Commands Button To Know My Features!*
 """
@@ -87,17 +87,15 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="✘ Add Me To Group ✘", url="t.me/KoyomiAraragiBot?startgroup=true"),
+            text="Add Me To Group", url="t.me/KoyomiAraragiBot?startgroup=true"),
     ],
 
     
     [
-        InlineKeyboardButton(text="✘ Help & Commands ✘", callback_data="help_back"),
-    ],
+        InlineKeyboardButton(text="Hᴇʟᴘ ", callback_data="help_back"),
 
-    [
         InlineKeyboardButton(
-            text="✘ Inline Commands ✘", callback_data="inlinebot"),
+            text="Iɴʟɪɴᴇ", callback_data="inlinebot"),
     ],
 ]
 
@@ -105,11 +103,15 @@ buttons = [
 
 HELP_STRINGS = """
 
-*This Is Help Menu Of {}*
+*You can choose an option below, by clicking a button.
+Also you can ask anything in Support Group.*
 
-*You Can Also Access This Menu Via* : `/help` 
+*This Is Help Menu Of @KoyomiAraragi*
 
-*You Can Handle Me* `/` *or* `!` *This*"""
+*Main commands available:
+ • /help: PM's you this message.
+ • /help <module name>: PM's you info about that module.
+"""
 
 layla_IMG = "https://telegra.ph/file/333553ffb6b122b42d84d.jpg"
 
