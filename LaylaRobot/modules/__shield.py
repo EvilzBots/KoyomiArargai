@@ -1,4 +1,4 @@
-#    Copyright (C) DevsExpo 2020-2021
+𝚆#    Copyright (C) DevsExpo 2020-2021
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as published by
 #    the Free Software Foundation, either version 3 of the License, or
@@ -442,4 +442,4 @@ __help__ = """
 *Note: Special credits goes to Julia project and Friday Userbot*
  
 """
-__mod_name__ = "✘ Shield ✘"
+__mod_name__ = "Sʜɪᴇʟᴅ"
