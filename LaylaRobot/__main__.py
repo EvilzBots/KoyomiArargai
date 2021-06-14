@@ -112,7 +112,7 @@ I'm a Handsome and can help admins manage their groups with My *Sexy* Modules! H
 *Main commands available:*
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
- • /donate: information on how to donate!
+ • /ping : alive or not checker!
 
 *I can be handle with this : / or !.*
 """
