@@ -824,7 +824,7 @@ __help__ = """
 ➤  `/trap`*: Sends Random Trap source Images*
 ➤  `/futanari` * Sends Random Futanari source Images*
 ➤  `/hololewd` *: Sends Random Holo Lewds*
-➤  `/lewdkemo` * Sends Random Kemo Lewds*
+➤  `/lewdkemo` *: Sends Random Kemo Lewds*
 ➤  `/sologif` *: Sends Random Solo GIFs*
 ➤  `/cumgif` *: Sends Random Cum GIFs*
 ➤  `/erokemo` : Sends Random Ero-Kemo Images*
@@ -867,7 +867,7 @@ __help__ = """
 ➤  `/ero` *: Sends Random Ero source Images*
 ➤  `/smug` *: Sends Random Smug GIFs*
 ➤  `/baka` * Sends Random Baka Shout GIFs*
- `/dva` *: Sends Random D.VA source Images*
+➤  `/dva` *: Sends Random D.VA source Images*
 """
 
-__mod_name__ = "✘ Adult Fun ✘"
+__mod_name__ = "✘ NSFW ✘"
