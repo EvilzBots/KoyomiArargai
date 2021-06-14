@@ -109,11 +109,16 @@ buttons = [
 ]
 
 HELP_STRINGS = """
-*This Is Help Menu*
+Hey there! My name is *Koyomi*.
+I'm a Handsome and can help admins manage their groups with My *Sexy* Modules! Have a look at the following for an idea of some of the things I can help you with.
 
-*You Can Also Access Via This* : `/help` 
+*Main commands available:*
+ • /help: PM's you this message.
+ • /help <module name>: PM's you info about that module.
+ • /donate: information on how to donate!
 
-*You Can Handle Me* `/` *or* `!` *This*"""
+*I can be handle with this : / or !.*
+"""
 
 layla_IMG = "https://telegra.ph/file/333553ffb6b122b42d84d.jpg"
 
