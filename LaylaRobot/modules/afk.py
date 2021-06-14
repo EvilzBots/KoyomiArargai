@@ -1,4 +1,4 @@
-import random, html
+import random, html, os
 
 from LaylaRobot import dispatcher
 from LaylaRobot.modules.disable import (
