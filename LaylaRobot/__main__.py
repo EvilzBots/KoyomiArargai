@@ -110,7 +110,7 @@ buttons = [
 
 
 
-HELP_STRINGS = """
+HELP_STRINGS ='''
 
 *You can choose an option below, by clicking a button.
 Also you can ask anything in Support Group.*
@@ -120,7 +120,7 @@ Also you can ask anything in Support Group.*
 *Main commands available:
  • /help: PM's you this message.
  • /help <module name>: PM's you info about that module.
-"""
+'''
 
 layla_IMG = "https://telegra.ph/file/333553ffb6b122b42d84d.jpg"
 
