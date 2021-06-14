@@ -357,11 +357,11 @@ async def inuka(client, message):
 __help__ = """
 *Artificial Intelligence Chat*
 
-*YOMIMI AI 3.0 IS THE ONLY AI SYSTEM WHICH CAN DETECT & REPLY UPTO 200 LANGUAGES*
+*Kᴏʏᴏᴍɪ Is Aɴ AI Bᴏᴛ , Wʜɪᴄʜ Cʜᴀᴛ Wɪᴛʜ Yᴏᴜ Aɴᴅ Cᴀɴ Dᴇᴛᴇᴄᴛ 15+ Lᴀɴɢ.
 
  ➤ `/chatbot`[ON/OFF]: Enables and disables AI Chat mode (EXCLUSIVE)
  ➤ `/chatbot` EN  Enables English only chatbot
  
 """
 
-__mod_name__ = "✘ Chatbot ✘"
+__mod_name__ = "Cʜᴀᴛʙᴏᴛ"
