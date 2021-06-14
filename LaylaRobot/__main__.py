@@ -78,10 +78,10 @@ PM_START_TEXT = """
 
 *I am an Anime themed advance group management bot with a lot of Features & Modules.*
 
-`/ping` *: Check I Am Alive Or Not?*
-`/help` *: Get Your Help Menu!*
+`/ping` : *Check I Am Alive Or Not?*
+`/help` : *Get Your Help Menu!*
 
-*Use Help & Commands Button To Know My Features!*
+*Use Help Button To Know My Features!*
 """
 
 buttons = [
@@ -108,19 +108,12 @@ buttons = [
     ],
 ]
 
+HELP_STRINGS = """
+*This Is Help Menu*
 
+*You Can Also Access Via This* : `/help` 
 
-HELP_STRINGS ='''
-
-*You can choose an option below, by clicking a button.
-Also you can ask anything in Support Group.*
-
-*This Is Help Menu Of @KoyomiAraragi*
-
-*Main commands available:
- • /help: PM's you this message.
- • /help <module name>: PM's you info about that module.
-'''
+*You Can Handle Me* `/` *or* `!` *This*"""
 
 layla_IMG = "https://telegra.ph/file/333553ffb6b122b42d84d.jpg"
 
