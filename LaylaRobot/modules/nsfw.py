@@ -819,7 +819,7 @@ __help__ = """
  
 *Available commands:*  
 ➤ `/neko` *: Sends Random SFW Neko source Images.*
-➤ /feet` *: Sends Random Anime Feet Images.
+➤ `/feet` *: Sends Random Anime Feet Images.
 ➤  `/yuri` *: Sends Random Yuri source Images*
 ➤  `/trap`*: Sends Random Trap source Images*
 ➤  `/futanari` * Sends Random Futanari source Images*
@@ -851,11 +851,11 @@ __help__ = """
 ➤  `/erofeet` *: Sends Random Ero-Feet source Images*
 ➤  `/holo` *: Sends Random Holo source Images*
 ➤  `/tits` *: Sends Random Tits source Images*
-➤  `/pussygif `*: Sends Random Pussy GIFs*
+➤  `/pussygif`*: Sends Random Pussy GIFs*
 ➤  `/holoero` *: Sends Random Ero-Holo source Images*
 ➤  `/pussy`  *: Sends Random Pussy source Images*
 ➤  `/hentaigif` *: Sends Random Hentai GIFs*
-➤  `/classic| *: Sends Random Classic Hentai GIFs*
+➤  `/classic` *: Sends Random Classic Hentai GIFs*
 ➤  `/kuni` *: Sends Random Pussy Lick GIFs*
 ➤  `/waifu` *: Sends Random Waifu Stickers*
 ➤  `/kiss`  *: Sends Random Kissing GIFs*
@@ -867,7 +867,7 @@ __help__ = """
 ➤  `/ero` *: Sends Random Ero source Images*
 ➤  `/smug` *: Sends Random Smug GIFs*
 ➤  `/baka` * Sends Random Baka Shout GIFs*
- `/dva *: Sends Random D.VA source Images*
+ `/dva` *: Sends Random D.VA source Images*
 """
 
 __mod_name__ = "✘ Adult Fun ✘"
