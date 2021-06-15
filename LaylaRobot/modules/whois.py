@@ -106,14 +106,3 @@ async def info(c: Client, m: Message):
             last_online=LastOnline(user),
             bio=desc if desc else "`No bio set up.`"),
         disable_web_page_preview=True)
-
-    try:
-        infotext, photo_id = await get_user_info(user)
-    except Exception as e:
-        return await m.edit(str(e))
-    if not photo_id:
-        return await m.edit(infotext, disable_web_page_preview=True)
-    photo = await app.download_media(photo_id)
-    await message.reply_photo(photo, caption=info_caption, quote=False)
-    await m.delete()
-    os.remove(photo)
