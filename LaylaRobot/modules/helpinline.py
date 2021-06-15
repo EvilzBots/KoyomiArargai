@@ -47,12 +47,7 @@ async def inline_query_handler(client, query):
                                                          InlineKeyboardButton(
                                                              "Aɴɪᴍᴇ", switch_inline_query_current_chat="anime "),
                                                          InlineKeyboardButton(
-                                                             "Mᴀɴɢᴀ", switch_inline_query_current_chat="manga ")
-                                                     ],
-                                            
-                                                         [
-                                                         InlineKeyboardButton(
-                                                             text="Main Menu", data="source_back")
+                                                             "Mᴀɴɢᴀ", switch_inline_query_current_chat="manga")
                                                      ]]
                                                  )
                                              ),
