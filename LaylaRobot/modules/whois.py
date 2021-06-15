@@ -68,10 +68,10 @@ async def whois(c: Client, m: Message):
             full_name=FullName(user),
             user_id=user.id,
             first_name=user.first_name,
-            last_name=user.last_name if user.last_name else "None",
-            username=user.username if user.username else "None",
-            dc_id = user.dc_id
-            photo_id = user.photo.big_file_id if user.photo else "None",
+            last_name=user.last_name if user.last_name else None,
+            username=user.username if user.username else None,
+            dc_id = user.dc_id,
+            photo_id = user.photo.big_file_id if user.photo else None,
             last_online=LastOnline(user),
             bio=desc if desc else "`No bio set up.`"),
         disable_web_page_preview=True)
