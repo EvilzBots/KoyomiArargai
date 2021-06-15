@@ -23,7 +23,7 @@ infotext = (
     " • **First Name: `{first_name}`\n**"
     " • **Last Name: `{last_name}`\n**"
     " • **Username: `{username}`\n**"
-   "**• Permanent Link : [{full_name}](tg://user?id={user_id})**\n"
+   "** • Permanent Link : [{full_name}](tg://user?id={user_id})**\n"
     " • **Last Online: `{last_online}`\n**"
     " • **Bio: __{bio}__**")
 
