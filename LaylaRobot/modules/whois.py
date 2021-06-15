@@ -106,11 +106,11 @@ async def info(c: Client, m: Message):
         disable_web_page_preview=True)
 
     try:
-        info_caption, photo_id = await get_user_info(user)
+        infotext, photo_id = await get_user_info(user)
     except Exception as e:
         return await m.edit(str(e))
     if not photo_id:
-        return await m.edit(info_caption, disable_web_page_preview=True)
+        return await m.edit(infotext, disable_web_page_preview=True)
     photo = await app.download_media(photo_id)
     await message.reply_photo(photo, caption=info_caption, quote=False)
     await m.delete()
