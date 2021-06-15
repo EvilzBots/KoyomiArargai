@@ -72,3 +72,4 @@ cloudscraper
 PyDictionary==2.0.1
 pykeyboard
 Python_ARQ
+tldextract
