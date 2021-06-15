@@ -18,10 +18,7 @@ def ReplyCheck(m: Message):
     return reply_id
 
 
-infotext = (
-    ''' 
-**• UserID: `{user_id}`\n• First Name: `{first_name}`\n• Last Name: `{last_name}`\n• Username: `{username}`\n• Permanent Link : [{full_name}](tg://user?id={user_id})**\n• Last Online: `{last_online}`\n• Bio: __{bio}__**
-    '''
+infotext = "**• UserID: `{user_id}`\n• First Name: `{first_name}`\n• Last Name: `{last_name}`\n• Username: `{username}`\n• Permanent Link : [{full_name}](tg://user?id={user_id})**\n• Last Online: `{last_online}`\n• Bio: __{bio}__**"
 
 
 def LastOnline(user: User):
