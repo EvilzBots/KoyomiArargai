@@ -78,7 +78,7 @@ PM_START_TEXT = """
 
 *I am an Anime themed group management bot. *
 
-*Add Me In Your Group , So I Can Manage Easily Manage It!* [ ](https://telegra.ph/file/ead09f6232ffd3ecf496f.mp4).
+*Add Me In Your Group , So I Can Manage Easily Manage It!* [ ](https://telegra.ph/file/08347ce6b23e35fa2f4de.jpg).
 """
 
 buttons = [
@@ -114,7 +114,7 @@ I'm a Handsome and can help admins manage their groups with My *Sexy* Modules! H
  • /help <module name>: PM's you info about that module.
  • /ping : alive or not checker!
 
-*I can be handle with this : / or !.* [ ] (https://telegra.ph/file/f8034c2c5cb5e090f0009.mp4)
+*I can be handle with this : / or !.* [ ](https://telegra.ph/file/f8034c2c5cb5e090f0009.mp4)
 """
 
 layla_IMG = "https://telegra.ph/file/333553ffb6b122b42d84d.jpg"
