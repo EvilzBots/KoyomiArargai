@@ -78,7 +78,7 @@ PM_START_TEXT = """
 
 *I am an Anime themed group management bot. *
 
-*Add Me In Your Group , So I Can Manage Easily Manage It!* [] (https://telegra.ph/file/19827816f487bf3e9a844.jpg)
+*Add Me In Your Group , So I Can Manage Easily Manage It!* [ ](https://telegra.ph/file/19827816f487bf3e9a844.jpg).
 """
 
 buttons = [
