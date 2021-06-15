@@ -28,4 +28,4 @@ UPDATES_INFO = '''
 async def inlinebot(event):
     await event.edit(IN_TXT, buttons=[
         [Button.switch_inline("✘ Anime ✘", query="anime", same_peer=True), Button.switch_inline("✘ Manga ✘", query="manga", same_peer=True)],
-        [Button.inline("back", data="source_back")]])
+        [Button.inline("Back", data="source_back")]])
