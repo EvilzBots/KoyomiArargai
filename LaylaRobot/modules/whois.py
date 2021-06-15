@@ -104,30 +104,20 @@ async def info(c: Client, m: Message):
             last_online=LastOnline(user),
             bio=desc if desc else "`No bio set up.`"),
         disable_web_page_preview=True)
-
-    if INFOPIC:
-        try:
-            profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
-            _file = bot.get_file(profile["file_id"])
-            _file.download(f"{user.id}.png")
-
-            message.reply_document(
-                document=open(f"{user.id}.png", "rb"),
-                caption=(infotext),
-                parse_mode=ParseMode.HTML,
-                disable_web_page_preview=True,
-            )
-
-            os.remove(f"{user.id}.png")
-        # Incase user don't have profile pic, send normal text
-        except IndexError:
-            message.reply_text(
-                infotext, parse_mode=ParseMode.HTML, disable_web_page_preview=True
-            )
-
-    else:
-        message.reply_text(
-            infotext, parse_mode=ParseMode.HTML, disable_web_page_preview=True
-        )
-
-    rep.delete()
+if message.reply_to_message:
+        user = message.reply_to_message.from_user.id
+    elif not message.reply_to_message and len(message.command) == 1:
+        user = message.from_user.id
+    elif not message.reply_to_message and len(message.command) != 1:
+        user = message.text.split(None, 1)[1]
+    m = await message.reply_text("Processing")
+    try:
+        info_caption, photo_id = await get_user_info(user)
+    except Exception as e:
+        return await m.edit(str(e))
+    if not photo_id:
+        return await m.edit(info_caption, disable_web_page_preview=True)
+    photo = await app.download_media(photo_id)
+    await message.reply_photo(photo, caption=info_caption, quote=False)
+    await m.delete()
+    os.remove(photo)
