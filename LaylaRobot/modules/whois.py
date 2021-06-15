@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from LaylaRobot import pyrogram as pbot
+from LaylaRobot import pbot
 from pyrogram import Client, filters
 from pyrogram.errors import PeerIdInvalid
 from pyrogram.types import Message, User
