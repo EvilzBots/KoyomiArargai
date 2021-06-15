@@ -104,13 +104,7 @@ async def info(c: Client, m: Message):
             last_online=LastOnline(user),
             bio=desc if desc else "`No bio set up.`"),
         disable_web_page_preview=True)
-if message.reply_to_message:
-        user = message.reply_to_message.from_user.id
-    elif not message.reply_to_message and len(message.command) == 1:
-        user = message.from_user.id
-    elif not message.reply_to_message and len(message.command) != 1:
-        user = message.text.split(None, 1)[1]
-    m = await message.reply_text("Processing")
+
     try:
         info_caption, photo_id = await get_user_info(user)
     except Exception as e:
