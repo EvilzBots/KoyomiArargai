@@ -38,15 +38,21 @@ async def inline_query_handler(client, query):
                                          results=[
                                              InlineQueryResultPhoto(
                                                  caption="Hey! I have an inline mode, click the buttons below to get inline funcs!",
-                                                 photo_url="https://telegra.ph/file/9a9517a5bd2ebade4d851.jpg",
+                                                 photo_url="https://telegra.ph/file/42c519830395e37255aed.jpg",
                                                  parse_mode="html",
                                                  title="Need Help?",
                                                  description="Click Here!",
                                                  reply_markup=InlineKeyboardMarkup(
                                                      [[
                                                          InlineKeyboardButton(
-                                                             "Anime", data="inlinebot"),
-                                             
+                                                             "Aɴɪᴍᴇ", switch_inline_query_current_chat="anime "),
+                                                         InlineKeyboardButton(
+                                                             "Mᴀɴɢᴀ", switch_inline_query_current_chat="manga ")
+                                                     ],
+                                            
+                                                         [
+                                                         InlineKeyboardButton(
+                                                             text="Main Menu", data="source_back")
                                                      ]]
                                                  )
                                              ),
