@@ -114,7 +114,7 @@ I'm a Handsome and can help admins manage their groups with My *Sexy* Modules! H
  • /help <module name>: PM's you info about that module.
  • /ping : alive or not checker!
 
-*I can be handle with this : / or !.* [ ](https://telegra.ph/file/f8034c2c5cb5e090f0009.mp4)
+*I can be handle with this : / or !.* [ ](https://telegra.ph/file/398165e5cb0a586e61078.mp4).
 """
 
 layla_IMG = "https://telegra.ph/file/333553ffb6b122b42d84d.jpg"
