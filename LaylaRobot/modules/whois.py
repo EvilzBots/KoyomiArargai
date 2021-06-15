@@ -23,7 +23,7 @@ infotext = "**• UserID: `{user_id}`\n• First Name: `{first_name}`\n• Last 
 
 def LastOnline(user: User):
     if user.is_bot:
-        return "
+        return "Yes"
     elif user.status == 'recently':
         return "Recently"
     elif user.status == 'within_week':
