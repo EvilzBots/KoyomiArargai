@@ -18,7 +18,7 @@ def ReplyCheck(m: Message):
     return reply_id
 
 
-infotext = "**• UserID: `{user_id}`\n• First Name: `{first_name}`\n• Last Name: `{last_name}`\n• Username: `{username}`\n• Permanent Link : [{full_name}](tg://user?id={user_id})\n• Last Online: `{last_online}`\n• Bio: __{bio}__**"
+infotext = "**• UserID: `{user_id}`\n• First Name: `{first_name}`\n• Last Name: `{last_name}`\n• Username: `{username}`\n• Profile Pic: `{dc_id}`• Permanent Link : [{full_name}](tg://user?id={user_id})\n• Last Online: `{last_online}`\n• Bio: __{bio}__**"
 
 
 def LastOnline(user: User):
@@ -70,6 +70,8 @@ async def whois(c: Client, m: Message):
             first_name=user.first_name,
             last_name=user.last_name if user.last_name else "None",
             username=user.username if user.username else "None",
+            dc_id = user.dc_id
+            photo_id = user.photo.big_file_id if user.photo else "None",
             last_online=LastOnline(user),
             bio=desc if desc else "`No bio set up.`"),
         disable_web_page_preview=True)
