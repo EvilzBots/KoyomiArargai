@@ -45,19 +45,8 @@ async def inline_query_handler(client, query):
                                                  reply_markup=InlineKeyboardMarkup(
                                                      [[
                                                          InlineKeyboardButton(
-                                                             "Anime", switch_inline_query_current_chat="anime "),
-                                                         InlineKeyboardButton(
-                                                             "Manga", switch_inline_query_current_chat="manga ")
-                                                     ],
-                                                         [
-                                                         InlineKeyboardButton(
-                                                             "Airing", switch_inline_query_current_chat="airing "),
-                                                         InlineKeyboardButton(
-                                                             "Character", switch_inline_query_current_chat="character ")
-                                                     ],
-                                                         [
-                                                         InlineKeyboardButton(
-                                                             text="Help", data="help_back")
+                                                             "Anime", switch_inline_query_current_chat="inlinebot"),
+                                             
                                                      ]]
                                                  )
                                              ),
