@@ -241,18 +241,18 @@ def info(update: Update, context: CallbackContext):
     rep = message.reply_text("<code>Extracting Info 🔍...</code>", parse_mode=ParseMode.HTML)
 
     text = (
-        f"╒═══「<b> Found Him:</b> 」\n"
+        f*「<b> Extraction Succesful</b> 」\n"
         f"ID: <code>{user.id}</code>\n"
-        f"First Name: {html.escape(user.first_name)}"
+        f"• <b> First Name: {html.escape(user.first_name)} </b>"
     )
 
     if user.last_name:
-        text += f"\nv<b> Last Name </b>: {html.escape(user.last_name)}"
+        text += f"\n• <b> Last Name: {html.escape(user.last_name)} </b>"
 
     if user.username:
-        text += f"\n <b> Username </b>: @{html.escape(user.username)}"
+        text += f"\n• <b> Username: @{html.escape(user.username)} </b>"
 
-    text += f"\n <b> Permalink </b>: {mention_html(user.id, 'link')}"
+    text += f"\n• <b> Permalink: {mention_html(user.id, 'link')} </b>"
 
     if chat.type != "private" and user_id != bot.id:
         _stext = "\nIs Verified : No "
@@ -271,7 +271,7 @@ def info(update: Update, context: CallbackContext):
                     text += _stext.format("Admin")
     if user_id not in [bot.id, 777000, 1087968824]:
         userhp = hpmanager(user)
-        text += f"\n <b> Deleted Account </b> : No"
+        text += f"\n• <b> Deleted Account : No </b>"
 
     try:
         spamwtc = sw.get_ban(int(user.id))
