@@ -104,3 +104,30 @@ async def info(c: Client, m: Message):
             last_online=LastOnline(user),
             bio=desc if desc else "`No bio set up.`"),
         disable_web_page_preview=True)
+
+    if INFOPIC:
+        try:
+            profile = context.bot.get_user_profile_photos(user.id).photos[0][-1]
+            _file = bot.get_file(profile["file_id"])
+            _file.download(f"{user.id}.png")
+
+            message.reply_document(
+                document=open(f"{user.id}.png", "rb"),
+                caption=(infotext),
+                parse_mode=ParseMode.HTML,
+                disable_web_page_preview=True,
+            )
+
+            os.remove(f"{user.id}.png")
+        # Incase user don't have profile pic, send normal text
+        except IndexError:
+            message.reply_text(
+                infotext, parse_mode=ParseMode.HTML, disable_web_page_preview=True
+            )
+
+    else:
+        message.reply_text(
+            infotext, parse_mode=ParseMode.HTML, disable_web_page_preview=True
+        )
+
+    rep.delete()
