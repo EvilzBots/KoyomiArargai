@@ -73,3 +73,34 @@ async def whois(c: Client, m: Message):
             last_online=LastOnline(user),
             bio=desc if desc else "`No bio set up.`"),
         disable_web_page_preview=True)
+
+@pbot.on_message(filters.command('info'))
+async def info(c: Client, m: Message):
+    cmd = m.command
+    if not m.reply_to_message and len(cmd) == 1:
+        get_user = m.from_user.id
+    elif len(cmd) == 1:
+        get_user = m.reply_to_message.from_user.id
+    elif len(cmd) > 1:
+        get_user = cmd[1]
+        try:
+            get_user = int(cmd[1])
+        except ValueError:
+            pass
+    try:
+        user = await c.get_users(get_user)
+    except PeerIdInvalid:
+        await m.reply("I don't know that User.")
+        return
+    desc = await c.get_chat(get_user)
+    desc = desc.description
+    await m.reply_text(
+        infotext.format(
+            full_name=FullName(user),
+            user_id=user.id,
+            first_name=user.first_name,
+            last_name=user.last_name if user.last_name else "None",
+            username=user.username if user.username else "None",
+            last_online=LastOnline(user),
+            bio=desc if desc else "`No bio set up.`"),
+        disable_web_page_preview=True)
