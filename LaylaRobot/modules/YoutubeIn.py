@@ -14,8 +14,6 @@ import requests
 import urllib
 from telethon import events
 
-if len(event.text) != 0:
-     return
 
 @tbot.on(events.InlineQuery(pattern=r"yt (.*)"))
 async def inline_id_handler(event: events.InlineQuery.Event):
@@ -104,8 +102,8 @@ async def inline_id_handler(event: events.InlineQuery.Event):
         okpro = requests.get(url=sedlyf, timeout=10).json()
     except:
         pass
-    sed = len(okpro)
-    if sed == 0:
+    if len(event.text) != 0:
+        return
         resultm = builder.article(
             title="No Results Found.",
             description="Check Your Spelling / Keyword",
