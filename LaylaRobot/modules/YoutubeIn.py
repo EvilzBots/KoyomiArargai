@@ -54,7 +54,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
             hmmkek = f"Channel : {thums} \nDuration : {td} \nViews : {tw}"
             results.append(
                 await event.builder.article(
-                    title=thum,
+                    title=Search Anything You Want!,
                     description=hmmkek,
                     text=okayz,
                     buttons=Button.switch_inline(
