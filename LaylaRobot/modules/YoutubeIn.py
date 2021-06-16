@@ -54,7 +54,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
             hmmkek = f"Channel : {thums} \nDuration : {td} \nViews : {tw}"
             results.append(
                 await event.builder.article(
-                    title=Search Anything You Want!,
+                    title=thum,
                     description=hmmkek,
                     text=okayz,
                     buttons=Button.switch_inline(
@@ -102,12 +102,11 @@ async def inline_id_handler(event: events.InlineQuery.Event):
         okpro = requests.get(url=sedlyf, timeout=10).json()
     except:
         pass
-    if len(event.text) != 0:
-        return
+    sed = len(okpro)
+    if sed == 0:
         resultm = builder.article(
             title="No Results Found.",
             description="Check Your Spelling / Keyword",
-            switch_pm="Search Any Torrent",
             text="**Please, Search Again With Correct Keyword, Thank you !**",
             buttons=[
                 [
@@ -173,7 +172,5 @@ file_help = file_help.replace(".py", "")
 file_helpo = file_help.replace("_", " ")
 
 __help__ = """
- - /ytinfo <video link>: Returns information about the youtube video
+ - /ytinfo <video link>:**Returns information about the youtube video**
 """
-
-__mod_name__ = "Yᴛ"
