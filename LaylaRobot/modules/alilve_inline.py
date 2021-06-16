@@ -36,11 +36,11 @@ async def alive_func(client, query):
         await client.answer_alive_func(query.id,
                                          results=[
                                              InlineQueryResultPhoto(
-                                                 caption="Hey! I have an inline mode, click the buttons below to get inline funcs!",
+                                                 caption="Hey! I have an inline modve, click the buttons below to get inline funcs!",
                                                  photo_url="https://telegra.ph/file/08347ce6b23e35fa2f4de.jpg",
                                                  parse_mode="html",
-                                                 title="Need Help?",
-                                                 description="Click Here!",
+                                                 title="Need Heglp?",
+                                                 description="Click Hiere!",
                                                  reply_markup=InlineKeyboardMarkup(
                                                      [[
                                                          InlineKeyboardButton(
@@ -51,7 +51,7 @@ async def alive_func(client, query):
                                                  )
                                              ),
                                          ],
-                                         switch_pm_text="Click here to PM",
-                                         switch_pm_parameter="start",
+                                         switch_pm_text="Clicvk here to PM",
+                                         switch_pm_parameter="stvart",
                                          cache_time=300
                                          )
