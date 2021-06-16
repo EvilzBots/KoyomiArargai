@@ -52,10 +52,8 @@ async def inline_query_handler(client, query):
 
                                                          [
                                                          InlineKeyboardButton(
-                                                             "Yᴏᴜᴛᴜʙᴇ", switch_inline_query_current_chat="airing "),
-                                                         InlineKeyboardButton(
-                                                             "Tᴏʀʀᴇɴᴛ", switch_inline_query_current_chat="character ")
-                                                     ]]
+                                                             "Yᴏᴜᴛᴜʙᴇ", switch_inline_query_current_chat="airing ")
+                                                      ]]
                                                  )
                                              ),
                                          ],
