@@ -254,7 +254,7 @@ async def inline_query_handler(client, query):
                                              cache_time=0,
                                              is_gallery=False
                                              )
-answerss = await alive_function(answerss)
+    answerss = await alive_function(answerss)
     return answerss
 
 
