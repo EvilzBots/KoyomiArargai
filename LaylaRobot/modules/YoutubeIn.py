@@ -31,8 +31,8 @@ async def inline_id_handler(event: events.InlineQuery.Event):
                 title="Search YT Video.",
                 description="YouTube Video Searcher",
                 text="This Is YouTube Video Searcher",
-        await event.answer([results])
-        return            
+            await event.answer([results])
+            return            
         search = SearchVideos(f"{testinput}", offset=1, mode="dict", max_results=int(evlin))
         mi = search.result()
         moi = mi["search_result"]
