@@ -107,7 +107,7 @@ async def inline_id_handler(event: events.InlineQuery.Event):
         resultm = builder.article(
             title="No Results Found.",
             description="Check Your Spelling / Keyword",
-            switch_pm_text="Search Any Torrent"
+            switch_pm_text="Search Any Torrent",
             text="**Please, Search Again With Correct Keyword, Thank you !**",
             buttons=[
                 [
