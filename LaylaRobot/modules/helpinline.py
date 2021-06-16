@@ -254,3 +254,40 @@ async def inline_query_handler(client, query):
                                              cache_time=0,
                                              is_gallery=False
                                              )
+answerss = await alive_function(answerss)
+    return answerss
+
+
+async def alive_function(answers):
+    buttons = InlineKeyboard(row_width=2)
+    bot_state = "Dead" if not await app.get_me() else "Alive"
+    ubot_state = "Dead" if not await app2.get_me() else "Alive"
+    buttons.add(
+        InlineKeyboardButton("Stats", callback_data="stats_callback"),
+        InlineKeyboardButton(
+            "Go Inline!", switch_inline_query_current_chat=""
+        ),
+    )
+
+    msg = f"""
+**[William✨](https://github.com/thehamkercat/WilliamButcherBot):**
+**MainBot:** `Alive`
+**UserBot:** `Alive`
+**Python:** `3.9.1`
+**Pyrogram:** `1.2.9`
+**MongoDB:** `2.4.0`
+**Platform:** `linux`
+**Profiles:** [BOT](t.me/{BOT_USERNAME})
+"""
+    answers.append(
+        InlineQueryResultArticle(
+            title="Alive",
+            description="Check Bot's Stats",
+            thumb_url="https://static2.aniimg.com/upload/20170515/414/c/d/7/cd7EEF.jpg",
+            input_message_content=InputTextMessageContent(
+                msg, disable_web_page_preview=True
+            ),
+            reply_markup=buttons,
+        )
+    )
+    return answers
