@@ -258,36 +258,29 @@ async def inline_query_handler(client, query):
     return answerss
 
 
-async def alive_function(answers):
-    buttons = InlineKeyboard(row_width=2)
-    bot_state = "Dead" if not await app.get_me() else "Alive"
-    ubot_state = "Dead" if not await app2.get_me() else "Alive"
-    buttons.add(
-        InlineKeyboardButton("Stats", callback_data="stats_callback"),
-        InlineKeyboardButton(
-            "Go Inline!", switch_inline_query_current_chat=""
-        ),
-    )
-
-    msg = f"""
-**[William✨](https://github.com/thehamkercat/WilliamButcherBot):**
-**MainBot:** `Alive`
-**UserBot:** `Alive`
-**Python:** `3.9.1`
-**Pyrogram:** `1.2.9`
-**MongoDB:** `2.4.0`
-**Platform:** `linux`
-**Profiles:** [BOT](t.me/{BOT_USERNAME})
-"""
-    answers.append(
-        InlineQueryResultArticle(
-            title="Alive",
-            description="Check Bot's Stats",
-            thumb_url="https://static2.aniimg.com/upload/20170515/414/c/d/7/cd7EEF.jpg",
-            input_message_content=InputTextMessageContent(
-                msg, disable_web_page_preview=True
-            ),
-            reply_markup=buttons,
-        )
-    )
-    return answers
+@pbot.on_inline_query()
+async def alive_func(client, query):
+    string = query.query.lower()
+    if string == "":
+        await client.alive_func(query.id,
+                                         results=[
+                                             InlineQueryResultPhoto(
+                                                 caption="Hey! I have an inline mode, click the buttons below to get inline funcs!",
+                                                 photo_url="https://telegra.ph/file/42c519830395e37255aed.jpg",
+                                                 parse_mode="html",
+                                                 title="Need Help?",
+                                                 description="Click Here!",
+                                                 reply_markup=InlineKeyboardMarkup(
+                                                     [[
+                                                         InlineKeyboardButton(
+                                                             "Ajɴɪᴍᴇ", switch_inline_query_current_chat="anime "),
+                                                         InlineKeyboardButton(
+                                                             "Mᴀɴj", switch_inline_query_current_chat="manga")
+                                                     ]]
+                                                 )
+                                             ),
+                                         ],
+                                         switch_pm_text="Click here to PM",
+                                         switch_pm_parameter="start",
+                                         cache_time=300
+                                         )
