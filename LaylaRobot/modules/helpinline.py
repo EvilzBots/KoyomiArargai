@@ -47,9 +47,9 @@ async def inline_query_handler(client, query):
                                                          InlineKeyboardButton(
                                                              "Aɴɪᴍᴇ", switch_inline_query_current_chat="anime "),
                                                          InlineKeyboardButton(
-                                                             "Mᴀɴɢᴀ", switch_inline_query_current_chat="manga")
+                                                             "Mᴀɴɢᴀ", switch_inline_query_current_chat="manga"),
                                                          InlineKeyboardButton(
-                                                             "Yᴏᴜᴛᴜʙᴇ", switch_inline_query_current_chat="yt"),
+                                                             "Yᴏᴜᴛᴜʙᴇ", switch_inline_query_current_chat="yt")
                                                      ]]
                                                  )
                                              ),
