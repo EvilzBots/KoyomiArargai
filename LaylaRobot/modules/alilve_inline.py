@@ -33,7 +33,7 @@ class AioHttp:
 async def alive_func(client, query):
     string = query.query.lower()
     if string == "":
-        await client.answer_inline_query(query.id,
+        await client.answer_alive_func(query.id,
                                          results=[
                                              InlineQueryResultPhoto(
                                                  caption="Hey! I have an inline mode, click the buttons below to get inline funcs!",
