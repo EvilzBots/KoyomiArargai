@@ -27,6 +27,6 @@ UPDATES_INFO = '''
 @tbot.on(events.callbackquery.CallbackQuery(data="inlinebot"))
 async def inlinebot(event):
     await event.edit(IN_TXT, buttons=[
-        [Button.switch_inline("Aɴɪᴍᴇ", query="anime ", same_peer=True), Button.switch_inline("Mᴀɴʜᴀ", query="manga ", same_peer=True)],
-        [Button.switch_inline("Yᴏᴜᴛᴜʙᴇ", query="yt ", same_peer=True), Button.switch_inline("Tᴏʀʀᴇɴᴛ", query="torrent ", same_peer=True)],
+        [Button.switch_inline("Aɴɪᴍᴇ", query="anime ", same_peer=True), Button.switch_inline("Mᴀɴɢᴀ", query="manga ", same_peer=True)],
+        [Button.switch_inline("Yᴏᴜᴛᴜʙᴇ", query="yt ", same_peer=True)],
         [Button.inline("Back", data="source_back")]])
