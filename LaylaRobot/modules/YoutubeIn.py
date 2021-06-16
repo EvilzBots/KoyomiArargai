@@ -14,6 +14,8 @@ import requests
 import urllib
 from telethon import events
 
+if len(event.text) != 0:
+     return
 
 @tbot.on(events.InlineQuery(pattern=r"yt (.*)"))
 async def inline_id_handler(event: events.InlineQuery.Event):
