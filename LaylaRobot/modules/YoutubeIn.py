@@ -173,3 +173,5 @@ file_helpo = file_help.replace("_", " ")
 __help__ = """
  - /ytinfo <video link>:**Returns information about the youtube video**
 """
+
+__mod_name__ = "Yᴏᴜᴛᴜʙᴇ"
