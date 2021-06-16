@@ -257,30 +257,3 @@ async def inline_query_handler(client, query):
     answerss = await alive_function(answerss)
     return answerss
 
-
-@pbot.on_inline_query()
-async def alive_func(client, query):
-    string = query.query.lower()
-    if string == "":
-        await client.alive_func(query.id,
-                                         results=[
-                                             InlineQueryResultPhoto(
-                                                 caption="Hey! I have an inline mode, click the buttons below to get inline funcs!",
-                                                 photo_url="https://telegra.ph/file/42c519830395e37255aed.jpg",
-                                                 parse_mode="html",
-                                                 title="Need Help?",
-                                                 description="Click Here!",
-                                                 reply_markup=InlineKeyboardMarkup(
-                                                     [[
-                                                         InlineKeyboardButton(
-                                                             "Ajɴɪᴍᴇ", switch_inline_query_current_chat="anime "),
-                                                         InlineKeyboardButton(
-                                                             "Mᴀɴj", switch_inline_query_current_chat="manga")
-                                                     ]]
-                                                 )
-                                             ),
-                                         ],
-                                         switch_pm_text="Click here to PM",
-                                         switch_pm_parameter="start",
-                                         cache_time=300
-                                         )
