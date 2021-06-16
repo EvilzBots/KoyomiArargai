@@ -37,10 +37,10 @@ async def inline_query_handler(client, query):
         await client.answer_inline_query(query.id,
                                          results=[
                                              InlineQueryResultPhoto(
-                                                 caption="Hey! I have an inline mode, click the buttons below to get inline funcs!",
+                                                 caption="Hey! This Is Help Menu Of Inline Function!",
                                                  photo_url="https://telegra.ph/file/42c519830395e37255aed.jpg",
                                                  parse_mode="html",
-                                                 title="Need Help?",
+                                                 title="Help Menu!",
                                                  description="Click Here!",
                                                  reply_markup=InlineKeyboardMarkup(
                                                      [[
@@ -48,6 +48,8 @@ async def inline_query_handler(client, query):
                                                              "Aɴɪᴍᴇ", switch_inline_query_current_chat="anime "),
                                                          InlineKeyboardButton(
                                                              "Mᴀɴɢᴀ", switch_inline_query_current_chat="manga")
+                                                         InlineKeyboardButton(
+                                                             "Yᴏᴜᴛᴜʙᴇ", switch_inline_query_current_chat="yt"),
                                                      ]]
                                                  )
                                              ),
