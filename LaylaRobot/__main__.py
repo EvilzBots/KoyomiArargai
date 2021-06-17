@@ -100,7 +100,7 @@ buttons = [
             text="Channel 📢 ", url="https://t.me/KoyomiUpdates"),
 
         InlineKeyboardButton(
-            text="About Me 💬", callback_data="aboutme"),
+            text="Documentation 💬", callback_data="aboutme"),
 
     ],
 ]
