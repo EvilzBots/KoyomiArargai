@@ -5,7 +5,7 @@ import sys
 from random import randint
 from sys import version as pyver
 from time import ctime, time
-
+from LaylaRobot.modules.fetch import fetch
 from motor import version as mongover
 from pykeyboard import InlineKeyboard
 from pyrogram import __version__ as pyrover
