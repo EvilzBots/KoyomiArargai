@@ -1,6 +1,5 @@
 import traceback
-
-from LaylaRobot import pyrogram as pbot
+import pyrogram as pbot
 from LaylaRobot.modules.gituser import *
 
 __HELP__ = """See inline for help related to inline"""
