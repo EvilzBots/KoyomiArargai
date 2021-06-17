@@ -84,12 +84,12 @@ PM_START_TEXT = """
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕ Add Me To Group", url="t.me/MrKoyomiBot?startgroup=true"),
+            text="➕ Add Me To Group ➕", url="t.me/MrKoyomiBot?startgroup=true"),
     ],
 
     
     [
-        InlineKeyboardButton(text="Help 📕", callback_data="help_back"),
+        InlineKeyboardButton(text="Help ❔", callback_data="help_back"),
 
         InlineKeyboardButton(
             text="Inline 🔍", callback_data="inlinebot"),
@@ -97,10 +97,10 @@ buttons = [
 
     [
         InlineKeyboardButton(
-            text="🗞️ Updates ", url="https://t.me/KoyomiUpdates"),
+            text="Channel 📢 ", url="https://t.me/KoyomiUpdates"),
 
         InlineKeyboardButton(
-            text="📞 Support ", url="https://t.me/KoyomiSupport"),
+            text="About Me 💬", callback_data="aboutme"),
 
     ],
 ]
