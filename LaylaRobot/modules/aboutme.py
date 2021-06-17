@@ -23,9 +23,6 @@ async def aboutme(event):
     await event.edit(ABOUT_TXT, buttons=[
         [Button.inline("My Devs ❕ ", data= "devs"), Button.inline("Quick Setup ⚙️", data="setup")]])
 
-@tbot.on(events.callbackquery.CallbackQuery(data="devs"))
-async def devs(event):
-
 DEV_TXT = '''
 **I Am Inspired By The Original Work Done By 
 @PaulSonofLars For Marie.! 
@@ -40,3 +37,9 @@ My Inspired Developer:
 3. @TheStarkxD [ I Also Thank To My Lovely Friend ]
 
 ~ Thanks 
+'''
+
+@tbot.on(events.callbackquery.CallbackQuery(data="devs"))
+async def devs(event):
+
+await event.edit(DEV_TXT, buttons=[[Button.inline("Main Menu", data="source_back")]])
