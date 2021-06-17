@@ -93,7 +93,7 @@ buttons = [
         InlineKeyboardButton(text="Help 📚", callback_data="help_back"),
 
         InlineKeyboardButton(
-            text="Inline ", callback_data="inlinebot"),
+            text="Inline 🔎", callback_data="inlinebot"),
     ],
 
     [
