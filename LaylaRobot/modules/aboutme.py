@@ -41,5 +41,4 @@ My Inspired Developer:
 
 @tbot.on(events.callbackquery.CallbackQuery(data="devs"))
 async def devs(event):
-
-await event.edit(DEV_TXT, buttons=[[Button.inline("Main Menu", data="source_back")]])
+    await event.edit(DEV_TXT, buttons=[[Button.inline("Main Menu", data="source_back")]])
