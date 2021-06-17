@@ -90,10 +90,10 @@ buttons = [
 
     
     [
-        InlineKeyboardButton(text="Help ❔", callback_data="help_back"),
+        InlineKeyboardButton(text="Help 📚", callback_data="help_back"),
 
         InlineKeyboardButton(
-            text="Inline 🔍", callback_data="inlinebot"),
+            text="Inline ", callback_data="inlinebot"),
     ],
 
     [
@@ -101,7 +101,7 @@ buttons = [
             text="Channel 📢 ", url="https://t.me/KoyomiUpdates"),
 
         InlineKeyboardButton(
-            text="Documentation 💬", callback_data="aboutme"),
+             text="About Me 💬", callback_data="aboutme"),
 
     ],
 ]
@@ -115,7 +115,7 @@ I'm a Handsome and can help admins manage their groups with My *Sexy* Modules! H
  • /help <module name>: PM's you info about that module.
  • /ping : alive or not checker!
 
-*I can be handle with this : / or !.* [ ](https://telegra.ph/file/398165e5cb0a586e61078.mp4).
+*I can be handle with this : / or !.* [ ](https://telegra.ph/file/0d0ea1691344cae037955.mp4).
 """
 
 layla_IMG = "https://telegra.ph/file/333553ffb6b122b42d84d.jpg"
