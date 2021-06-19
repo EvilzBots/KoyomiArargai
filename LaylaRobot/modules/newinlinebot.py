@@ -24,13 +24,9 @@ from search_engine_parser import GoogleSearch
 from tswift import Song
 from youtubesearchpython import VideosSearch
 
-from LaylaRobot.config import get_str_key
 from LaylaRobot.functions.inlinehelper import *
 from LaylaRobot.functions.pluginhelpers import fetch, json_prettify
 from LaylaRobot import pbot as app
-
-OPENWEATHERMAP_ID = get_str_key("OPENWEATHERMAP_ID", "")
-TIME_API_KEY = get_str_key("TIME_API_KEY", required=False)
 
 dictionary = PyDictionary()
 
