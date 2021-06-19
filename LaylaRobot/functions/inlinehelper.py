@@ -40,13 +40,9 @@ from pyrogram.types import (
 from Python_ARQ import ARQ
 from search_engine_parser import GoogleSearch
 
-from LaylaRobot import BOT_USERNAME, OWNER_ID
-from LaylaRobot.config import get_str_key
 from LaylaRobot.functions.pluginhelpers import convert_seconds_to_minutes as time_convert
 from LaylaRobot.functions.pluginhelpers import fetch
 from LaylaRobot import arq, pgram as pbot
-
-SUDOERS = OWNER_ID
 
 app = pbot
 import socket
